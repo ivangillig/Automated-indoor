@@ -14,14 +14,14 @@ unsigned long lowWaterLevelStartTime;
 unsigned long duration;
 float distance;
 
-#define moistureSensor A8
+#define moistureSensor 3
 #define wet 413
 #define dry 819
 #define EMPTY_WATER_LEVEL 32.63
 #define MIN_WATER_LEVEL 29
 
 int waterPump = 5;
-int ambientSensor = 38;
+int ambientSensor = 1;
 float temperature;
 int humidity;
 DHT dht (ambientSensor, DHT22);
